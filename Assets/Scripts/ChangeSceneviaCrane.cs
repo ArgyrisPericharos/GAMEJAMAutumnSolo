@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ChangeSceneviaCrane : MonoBehaviour
 {
     public GameManager Script;
@@ -18,11 +18,15 @@ public class ChangeSceneviaCrane : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        if ((other.tag == "Player" && Input.GetKeyDown("e")) && (Script.GetComponent<GameManager>().VeryImportantIsactive = true))
+        if ((other.tag == "Player") && (Script.GetComponent<GameManager>().VeryImportantIsactive == true))
         {
-            Debug.Log("Ready To change Scene");
+            if ((Input.GetKeyDown("e")))
+            {
+                Debug.Log("Ready To change Scene");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+            
         }
-        else
-            Debug.Log("Not Ready To change Scene");
+            
     }
 }
