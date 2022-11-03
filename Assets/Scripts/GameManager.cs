@@ -18,6 +18,12 @@ public class GameManager : MonoBehaviour
 
     public bool WaterIsactive;
 
+    public bool HitIsActive;
+
+    public bool MultipleCloseIson;
+
+    public bool MultipleDistanceIson;
+
     // Start is called before the first frame update
     void Start()
     {
