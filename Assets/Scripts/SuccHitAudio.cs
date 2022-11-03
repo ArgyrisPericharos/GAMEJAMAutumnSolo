@@ -6,6 +6,8 @@ public class SuccHitAudio : MonoBehaviour
 {
     public GameObject audiosource;
 
+    public GameObject Muzzle11;
+
     public GameManager gamemanager;
     //public CameraShake cameraShake;
     public GameObject Camshakeholder;
@@ -37,6 +39,7 @@ public class SuccHitAudio : MonoBehaviour
             Debug.Log("I work1");
             audiosource.SetActive(true);
             gamemanager.GetComponent<GameManager>().HitIsActive = true;
+            Muzzle11.SetActive(true);
 
         }
 
@@ -52,6 +55,7 @@ public class SuccHitAudio : MonoBehaviour
             gamemanager.GetComponent<GameManager>().HitIsActive = false;
             audiosource.SetActive(false);
             Camshakeholder.SetActive(false);
+            Muzzle11.SetActive(false);
 
             State = 1;
         }
