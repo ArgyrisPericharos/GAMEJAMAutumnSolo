@@ -20,7 +20,7 @@ public class ChangeSceneviaCrane : MonoBehaviour
     {
         if ((other.tag == "Player") && (Script.GetComponent<GameManager>().VeryImportantIsactive == true))
         {
-            if ((Input.GetKeyDown("e")))
+            if ((Input.GetKey("e")))
             {
                 Debug.Log("Ready To change Scene");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

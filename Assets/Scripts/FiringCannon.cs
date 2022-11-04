@@ -27,7 +27,7 @@ public class FiringCannon : MonoBehaviour
         {
             Debug.Log("I am Inside");
 
-            if ((Input.GetKeyDown("e")))
+            if ((Input.GetKey("e")))
             {
                 Debug.Log("I fired the cannon");
                 Toactivate1.SetActive(true);

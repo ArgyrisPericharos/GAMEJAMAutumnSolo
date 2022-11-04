@@ -14,6 +14,6 @@ public class Camerashakeatall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(cameraShake.Shake(.1f, .4f));
+        StartCoroutine(cameraShake.Shake(.1f, .2f));
     }
 }

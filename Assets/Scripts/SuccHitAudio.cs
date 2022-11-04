@@ -18,6 +18,7 @@ public class SuccHitAudio : MonoBehaviour
     void Start()
     {
         audiosource.SetActive(false);
+        Muzzle11.SetActive(false);
 
 
     }
